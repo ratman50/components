@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+  transition: .4s linear;
+  box-sizing: border-box;
+}
+
+.card__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2em auto;
+  padding: 2rem;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.card__item {
+  flex: 1 1 30%;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.card__image
+ {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+  height: 20rem;
+}
+.card__item:hover .card__content
+{
+    top: 0;
+}
+.card__content {
+  position: absolute;
+  top: -100%;left: 0;
+  padding-top: 3rem;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  color: white;
+}
+.card__title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.card__price {
+  font-size: 1.6em;
+  text-align: center;
+}
+.card__text {
+  padding: 0.4em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.card__button
+ {
+  background-color: darkgoldenrod;
+  font-size: 1.3rem;
+  display: block;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.3em;
+  border-radius: 15px;
+  width: 150px;
+  margin: 0.5em auto;
+  position: relative;
+}
+.card__button::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;left: 0;
+    border-radius: 11px;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    background-color: burlywood;
+
+}
+.card__button:hover
+{
+    color: white;
+}
+.card__button:hover::after
+{
+    opacity: .5;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+    .card__title {
+      font-size: 2.1rem;
+    }
+    .card__price {
+      font-size: 1em;
+    }
+    .card__button {
+      background-color: darkgoldenrod;
+      font-size: 1rem;
+      padding: 0.1em;
+      width: 140px;
+    }
+    .card__content
+    {
+        position: static;
+        background-color: white;
+        color: black;
+        padding-top: 0;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 450px) {
+    .card__item
+    {
+        flex-basis: 50%;
+    }
+}
