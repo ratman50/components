@@ -16,7 +16,7 @@
 .main__container
 {
     display: grid;
-    grid-template: repeat(4,60vh) 40vh /repeat(4,25vw) ;
+    grid-template: repeat(3,60vh) 30vh /repeat(4,24.7vw) ;
 }
 
 .iphone-6s
@@ -33,7 +33,7 @@
 }
 .iphone-6s__information
 {
-    padding: .5em;   
+    padding: 4em;   
     flex: 1 1 20%;
     height: 100%;
 }
@@ -69,10 +69,11 @@
 .iphone-6s__image
 {
     flex:none;
-    width: 40%;
+    width: 300px;
     height: 100%;
-    object-fit: cover;
-    padding-right: 2em;
+    /* object-fit: cover; */
+    padding-top: 3rem;
+    padding-right: 4em;
 }
 
 
@@ -82,7 +83,7 @@
 }
 .guidelines__content
 {
-    padding: 2rem;
+    padding: 1rem;
     background-color: #f7f8f9;
     height: 100%;
     display:flex;
@@ -128,14 +129,11 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction: column;
     background-color: #f05638;
     height: 100%;
-    padding: 2rem;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index: 1000;
-    flex-direction: column;
+    padding: 1rem;
+    
 }
 .brand-new__image
 {
@@ -235,11 +233,213 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    padding: 2em;
+    /* padding: 1.4em; */
+    background-color: #8f76bc;
+    overflow: hidden;
+    color: white;
+    /* width: 90%; */
+}
+.icloud__meet
+{
+    
+    position: relative;
+    border-radius:50% ;
+    top: -10px;
+    width: 120%;
+    text-align: center;
+    background-color: #7d63ab;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.fas.fa-flag
+{
+    color: goldenrod;
 }
 .icloud__popular
 {
     border-radius: 40px;
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 10px;
+    margin: 13px;
+    background-color: #8f76bc;
+
+}
+.icloud__save
+{
+    width: 70%;
+    margin: 0 auto;
+    padding: .3em;
+}
+.icloud__text 
+{
+    font-size: 1em;
+    padding: .3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.icloud__information
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding: 1.2em;
+}
+.icloud__story
+{
+    color: white;
+}
+.icloud__learn-more
+{
+    color: black;
+    font-size: 1.2rem;
+    background-color: yellow;
+    padding: .5em;
+    border-radius: 20px;
+}
+.icloud__learn-more:hover
+{
+    color: white;
+}
+.games
+{
+    grid-area: 3/1/4/2;
+}
+.games__content
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height: 100%;
+    padding: .7em;
+}
+.game__image
+{
+    width: 80%;
+}
+.games__title
+{
+    flex: auto;
+    padding:  0 1em;
+    text-align: center;
+}
+.games__button
+{
+    margin: 1em auto;
+    color: rgb(18, 117, 117);
+    font-weight: bolder;
+}
+.experience
+{
+    grid-area: 3/2/4/4 ;
+}
+.experience__content
+{
+    background-color: #93b6b7;
+    height: 100%;
+    padding: 2em 2em 0;
+    color: white;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+.best-choice
+{
+    font-size: .7em;
+    background-color: red;
+    display: inline-block;
+    padding: .4em;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.experience__title
+{
+    text-transform: uppercase;
+    padding:  0 8em .8em;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.container__image
+{
+    background: url("images/bg1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+}
+.experience__image
+{
+    padding: 3em 3em 0;
+    width: 100%;
+    position: relative;
+    left: -10%;
+}
+.connect{
+    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #38d5f4;
+}
+.connect__content
+{
+    height: 120%;
+    border-radius: 50%;
+    margin: 0 2em;
+    padding: 2.5em;
+    display:flex;
+    background-color: #35cfed;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    color: white;
+}
+.fa-twitter
+{
+   font-size: 3.6rem;
+}
+.connect__title
+{
+    font-size: 1.6rem;
+}
+
+.much-better
+{
+    grid-area: 4/2/5/3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.much-better__popular
+{
+    color: white;
+    background-color: yellowgreen;
+    padding: .4em;
+    border-radius: 15px;
+}
+.much-better__text{
+    text-align: center;
+}
+.display
+{
+    background: #2c2c2c;
+    display: flex;
+    grid-area: 4/3/5/5;
+
+}
+.display__image
+{
+    flex: 0 1 40%;
+    object-fit: cover;
+}
+.display__text  
+{
+    flex: 0 1 50%;
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem;
 }
