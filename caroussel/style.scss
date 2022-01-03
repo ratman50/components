@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90vw;
+  height: 80vh;
+  margin: 3em auto;
+  background-color: #0000 !important;
+}
+.mySlides
+{
+  position: relative;
+}
+
+.numberText
+{
+  position: absolute;
+  top: 20px;left: 20px;
+  color: white;
+}
+.next,.prev
+{
+  position: absolute;
+  top: 8em;
+  color: white;
+  font-size: 2rem;
+  padding: .5em;
+}
+.next:hover,.prev:hover
+{
+  background-color: black;
+}
+
+.next
+{
+  right: 4em;
+}
+.prev
+{
+  left: 4em;
+}
+img
+{
+  width: 100%;
+  animation: fade .5s;
+}
+@keyframes fade {
+  from{
+    opacity: .5;
+  }
+  to{
+    opacity: 1;
+  }
+}
