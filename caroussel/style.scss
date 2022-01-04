@@ -6,18 +6,20 @@
   list-style: none;
   outline: none;
   box-sizing: border-box;
+  /* transition: .4s; */
 }
 
 .container {
   width: 90vw;
-  height: 80vh;
+  height: 85vh;
   margin: 3em auto;
-  background-color: #0000 !important;
 }
 .mySlides
 {
   position: relative;
 }
+
+
 
 .numberText
 {
@@ -40,11 +42,11 @@
 
 .next
 {
-  right: 4em;
+  right: 2.2em;
 }
 .prev
 {
-  left: 4em;
+  left: 2.2em;
 }
 img
 {
@@ -58,4 +60,33 @@ img
   to{
     opacity: 1;
   }
+}
+.caption-container
+{
+  background-color: #0000;
+}
+.caption
+{
+  text-align:center;
+  padding: 1em;
+  font:{
+    size:1.2rem;
+    weight:bolder;
+  };
+}
+
+.grid-image
+{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.image
+{
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+.image_active
+{
+  opacity: 1;
 }
